@@ -83,7 +83,7 @@ fn redundant_into_ambiguous_output() {
          }.into();
     }
     "#, @r"
-    Trait `core::traits::Into::<test::MyStruct, ?0>` has multiple implementations, in: `core::option::TIntoOption::<test::MyStruct>`, `core::traits::TIntoT::<test::MyStruct>`
+    Trait `Into::<MyStruct, ?0>` has multiple implementations, in: `core::option::TIntoOption::<MyStruct>`, `core::traits::TIntoT::<MyStruct>`
      --> lib.cairo:9:8
          }.into();
            ^^^^
@@ -102,7 +102,7 @@ fn redundant_into_ambiguous_input() {
         panic!("ehhh")
     }
     "#, @r#"
-    Trait has no implementation in context: core::traits::Into::<I, core::integer::u8>.
+    Trait has no implementation in context: Into::<I, u8>.
      --> lib.cairo:3:27
         let _result: u8 = num.into();
                               ^^^^
@@ -236,7 +236,7 @@ fn redundant_try_into_ambiguous_input() {
         panic!("ehhh")
     }
     "#, @r#"
-    Trait has no implementation in context: core::traits::TryInto::<I, core::integer::u8>.
+    Trait has no implementation in context: TryInto::<I, u8>.
      --> lib.cairo:3:27
         let _result: u8 = num.try_into().unwrap();
                               ^^^^^^^^
