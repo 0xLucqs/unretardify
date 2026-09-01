@@ -223,7 +223,7 @@ source = "git+https://github.com/starkware-libs/cairo?rev=4c8faf9#4c8faf9d19a759
 dependencies = [
  "cairo-lang-utils",
  "indoc",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "parity-scale-codec",
  "serde",
@@ -362,7 +362,7 @@ dependencies = [
  "indent",
  "itertools 0.15.0",
  "log",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "salsa",
@@ -385,7 +385,7 @@ dependencies = [
  "cairo-lang-utils",
  "colored",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "salsa",
  "unescaper",
@@ -472,7 +472,7 @@ dependencies = [
  "id-arena",
  "indoc",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "salsa",
@@ -496,7 +496,7 @@ dependencies = [
  "itertools 0.15.0",
  "lalrpop",
  "lalrpop-util",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "regex",
@@ -518,7 +518,7 @@ dependencies = [
  "cairo-lang-sierra-type-size",
  "cairo-lang-utils",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "thiserror",
 ]
@@ -533,7 +533,7 @@ dependencies = [
  "cairo-lang-sierra-type-size",
  "cairo-lang-utils",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "thiserror",
 ]
@@ -554,7 +554,7 @@ dependencies = [
  "cairo-lang-syntax",
  "cairo-lang-utils",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "rayon",
  "salsa",
@@ -577,7 +577,7 @@ dependencies = [
  "cairo-lang-utils",
  "indoc",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "starknet-types-core",
  "thiserror",
@@ -636,7 +636,7 @@ dependencies = [
  "cairo-lang-utils",
  "convert_case",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "serde",
@@ -659,7 +659,7 @@ dependencies = [
  "cairo-lang-proc-macros",
  "cairo-lang-utils",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "salsa",
  "serde",
@@ -696,7 +696,7 @@ dependencies = [
  "cairo-lang-utils",
  "indoc",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "salsa",
  "serde",
@@ -724,7 +724,7 @@ dependencies = [
  "hashbrown 0.17.1",
  "indexmap",
  "itertools 0.15.0",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "salsa",
  "schemars",
@@ -774,9 +774,9 @@ dependencies = [
  "if_chain",
  "indoc",
  "insta",
- "itertools 0.14.0",
+ "itertools 0.15.0",
  "log",
- "num-bigint",
+ "num-bigint 0.5.1",
  "pretty_assertions",
  "salsa",
  "scarb-metadata",
@@ -812,7 +812,7 @@ dependencies = [
  "keccak 0.1.6",
  "lazy_static",
  "nom",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-prime",
  "num-traits",
@@ -1661,7 +1661,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "018a95aa873eb49896a858dee0d925c33f3978d073c64b08dd4f2c9b35a017c6"
 dependencies = [
  "getrandom 0.2.17",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-traits",
  "rand 0.8.7",
  "serde",
@@ -1827,6 +1827,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "num-bigint"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "93e7820bc0a80a0238e650327316f929ba18d5be054b647490a3a6a339f3e7c0"
+dependencies = [
+ "num-integer",
+ "num-traits",
+]
+
+[[package]]
 name = "num-complex"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1856,7 +1866,7 @@ version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "64a5fe11d4135c3bcdf3a95b18b194afa9608a5f6ff034f5d857bc9a27fb0119"
 dependencies = [
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
 ]
@@ -1870,7 +1880,7 @@ dependencies = [
  "bitvec",
  "either",
  "lru",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-modular",
  "num-traits",
@@ -2586,7 +2596,7 @@ dependencies = [
  "crypto-bigint",
  "hex",
  "hmac",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "rfc6979",
@@ -2616,7 +2626,7 @@ dependencies = [
  "lambdaworks-crypto",
  "lambdaworks-math",
  "lazy_static",
- "num-bigint",
+ "num-bigint 0.4.8",
  "num-integer",
  "num-traits",
  "rand 0.9.5",
@@ -3094,9 +3104,9 @@ dependencies = [
 
 [[package]]
 name = "which"
-version = "8.0.5"
+version = "8.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f3ef584124b911bcc3875c2f1472e80f24361ceb789bd1c62b3e9a3df9ff43c"
+checksum = "bae2f2b2b816647a1cab1acc91f5bd20812d53cb344382635ec2181940c8034f"
 dependencies = [
  "libc",
 ]
